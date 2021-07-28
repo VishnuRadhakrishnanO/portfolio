@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,300&display=swap');
+:root{
+    --background-color:#333649;
+    --secondary-color:#bbbbbb;
+    --bg-color-list-skills:#81818180
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--background-color)!important;
+}
+
+/*Navbar*/
+.nav_section .navbar-brand{
+font-size: 22px;
+
+}
+
+.nav_section .navbar-nav li{
+    margin: 0px 8px;
+}
+.nav_section .navbar-nav li a{
+    color: white !important;
+    font-size: 15px;
+}
+.nav_section .navbar-nav .nav-link::before{
+content: '';
+width: 0px;
+height: 0px;
+background-color: white;
+position: absolute;
+bottom: 7px;
+transition: 0.5s;
+}
+
+.nav_section .navbar-nav .nav-link:hover::before{
+    content: '';
+    height: 2px;
+    width: 17px;
+    background-color: white;
+    position:absolute;
+    bottom: 7px;
+}
+.hero_section .row{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    
+}
+.hero_section .row h1,h2,h3,p{
+    color: white;
+}
+.hero_section .row h3{
+    font-size: 19px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.hero_section .row h3::after{
+    content: '';
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 90px;
+    height: 2px;
+    background-color: white;
+    margin-left: 6px;
+}
+.hero_section .row h1{
+    font-size: 36px;
+    font-weight: 800;
+}
+.hero_section .row h2{
+    font-size: 30px;
+    font-weight: 100;
+    margin: 8px 0px;
+}
+
+.hero_section .row p{
+    font-size: 15px;
+    margin-top: 13px;
+    line-height: 21px;
+    color: var(--secondary-color);
+    margin-left: 0px;
+}
+.hero_section .row button{
+border-radius: 10px;
+font-size: 20px;
+color: white;
+background-color: rgb(224, 83, 18);
+border: 3px solid rgb(224, 83, 18);
+width: 150px;
+font-family: 'poppins',sans-serif;
+margin-top: 10px;
+}
+.hero_section .row img{
+width: 65%;
+height: 10%;
+border: snow;
+border-style:outset;
+border-radius: 70px;
+margin-top: 10px;
+
+margin-left: 2px;
+}
+.hero_section .row button:hover{
+    animation: swing;
+    animation-duration: 00.5s;
+    background-color: white;
+    color: rgb(179, 24, 24);
+}
+canvas.particles-js-canvas-el{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1000;
+    margin: 0px;
+}
+
+@media (max-width:1200px) and (min-width:993px){
+    .hero_section .row h1{
+        font-size: 58px;
+    }
+    .hero_section .row p{
+        font-size: 20px;
+        line-height: 50px;
+    }
+}
+@media (max-width:993px) and (min-width:763px){
+    .hero_section .row h1{
+        font-size: 22px;
+        text-align: center;
+    }
+    .hero_section .row h2{
+        font-size: 20px;
+    }
+    .hero_section .row p{
+        font-size: 18px;
+    }
+    .hero_section .row h3{
+        font-size: 15px;
+    }
+    .hero_section .row button{
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width:763px) and (min-width:500px){
+    .hero_section{
+        margin: 55px 0px;
+
+    }
+    .hero_section .row h1{
+        font-size: 46px;
+        text-align: center;
+    }
+    .hero_section .row h2{
+        font-size: 15px;
+        text-align: center;
+    }
+    .hero_section .row p{
+        font-size: 11px;
+        text-align: center;
+    }
+    .hero_section .row h3{
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 0px;
+
+    }
+    .hero_section .row button{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .hero_section .row img{
+        width: 50%;
+        height: 10%;
+        border: snow;
+        border-style:outset;
+        border-radius: 70px;
+        margin-left: 5px;
+        
+        }
+}
+
+/*about section*/
+.about_section{
+    background-color: #2a2c3f;
+    padding: 170px 0px;
+}
+.about_section #heading{
+font-weight: 600;
+font-size: 40px;
+letter-spacing: 0.5px;
+line-height: 57px;
+}
+
+.about_section .lets_talk{
+    color:white;
+    font-weight: 400;
+    margin-top: 14px;
+}
+.about_section #info_gmail{
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 35px;
+    color:rgb(224, 83, 18);
+    word-spacing: 6px;
+}
+.about_section .contact_info{
+    margin-top: 15px;
+}
+.about_section .contact_info h5{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    word-spacing: 600;
+}
+.about_section .about_me_right_section #txt{
+font-size: 15px;
+margin-top: 13px;
+line-height: 25px;
+color: var(--secondary-color);
+}
+.about_section .about_me_right_section hr{
+    margin: 0px;
+    border: 00.5px solid rgb(224, 83, 18);
+    width: 12rem;
+}
+.about_section .about_me_right_section table td{
+    border: none;
+    color: white;
+    font-size: 13px;
+}
+.about_section .about_me_right_section button{
+    border-radius: 10px;
+font-size: 20px;
+color: white;
+background-color: rgb(224, 83, 18);
+border: 3px solid rgb(224, 83, 18);
+width: 150px;
+font-family: 'poppins',sans-serif;
+margin-top: 10px;
+}
+.about_section .about_me_right_section button:hover{
+    animation: swing;
+    animation-duration: 00.5s;
+    background-color: white;
+    color: rgb(179, 24, 24);
+}
+@media (max-width :993px) and (min-width:768px){
+    .about_section .about_me_right_section #txt{
+        font-size: 12px;
+        }
+        .about_section #heading{
+            font-size: 28px;
+        }
+}
+@media (max-width:763px) and (min-width:500px){
+    .about_section .about_me_right_section table td{
+        border: none;
+        color: white;
+        font-size: 10px;
+    }
+}
+/*Skill*/
+.skills_section{
+    padding: 100px 0;
+}
+.skills_section .skills_section_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.skills_section #heading{
+    font-weight: 600;
+    font-size: 50px;
+}
+.skills_section hr{
+    border: 00.5px solid rgb(224, 83, 18);
+    width: 12rem;
+    margin: 12px 0px;
+}
+.skills_section p{
+    color: var(--secondary-color);
+    font-size: 15px;
+}
+.skills_section .social_media_icons .list-group .list-group-item{
+    border: none;
+    color:white;
+    border-left: 2px solid rgb(224, 83, 18);
+    border-radius: 0px;
+    margin: 5px 0px;
+    width: 208px;
+    background:var(--bg-color-list-skills);
+font-size: 14px;
+}
+.skills_section .social_media_icons .list-group .list-group-item a{
+    transition: 0.5s;
+}
+.skills_section .social_media_icons .list-group .list-group-item:hover a{
+   margin-left: 10px;
+}
+.skills_section_right .each_skills{
+    margin: 25px 0px;
+}
+.skills_section_right .each_skills span{
+    color: white;
+    font-size: 14px;
+}
+.skills_section_right .each_skills .progress{
+    background-color: var(--bg-color-list-skills);
+    border-radius: 100px;
+    margin-top: 3px;
+    height: 10px;
+}
+.skills_section_right .each_skills .progress-bar{
+   background-color:rgb(224, 83, 18) !important ;
+   color:transparent;
+}
+/*portfolio section*/
+
+.portfolio_section{
+    background: #282A39;
+    padding: 150px 0px;
+}
+.portfolio_section .nav-tabs{
+    border: none;
+    width: 30%;
+    text-align: center;
+}
+.portfolio_section .nav-tabs .nav-link.active{
+    border: none;
+    color: white;
+    border-bottom: 2px solid rgb(224, 83, 18) !important ;
+    background: transparent;
+}
+.portfolio_section .nav-tabs .nav-link.active:hover{
+    border-bottom: 2px solid  rgb(224, 83, 18) !important;
+}
+.portfolio_section .nav-tabs .nav-item.show .nav-link{
+    font-weight: 400;
+    font-size: 14px;
+    background: transparent !important;
+}
+.portfolio_section .nav-tabs .nav-link:hover{
+    border: none;
+}
+.portfolio_section .tab-content .card{
+    background-color: #282A39;
+}
+.portfolio_section .tab-content .card a{
+ color:rgb(224, 83, 18) ;
+
+}
+.portfolio_section .tab-content .card:hover{
+ animation: pulse;
+ animation-duration: 00.5s;
+
+}
+.portfolio_section .tab-content .card img{
+    border: 2px solid rgb(224, 83, 18);
+}
+
+.professional_section{
+    background: var(--background-color);
+    padding: 150px 0px;
+    
+}
+.professional_section h1 {
+    font-size: 50px;
+    border-bottom: 2px solid rgb(224, 83, 18) !important ;
+    border-radius: 0px;
+}
+#subhead {
+    text-align: left;
+    margin-top: 20px;
+}
+#exp_para {
+    color: white;
+}
+@media (max-width:763px){
+    .professional_section h1 {
+        font-size: 30px;
+        border-bottom: 2px solid rgb(224, 83, 18) !important ;
+        border-radius: 0px;
+    }
+    #subhead {
+        text-align: left;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    #exp_para {
+        color: white;
+        font-size: 10px;
+    }
+}
+
+/*footer*/
+.footer-area{
+    background-color: #282A39;
+    border-top: 2px solid var(--secondary-color);
+    padding: 4px 0px;
+}
+.footer-area .navbar-brand{
+    font-size: 23px;
+}
+.footer-area p{
+    margin-top: 13px;
+    color: var(--secondary-color);
+    font-size: 12px;
+}
+.footer-area .logo-area .fa{
+    color:  rgb(224, 83, 18);
+    font-size: 17px !important;
+    border: 2px solid rgb(224, 83, 18);
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+.footer-area .logo-area .fa:hover{
+    animation:swing;
+    animation-duration: 5s;
+    background-color: white;
+}
+.footer-area .row .column .heading{
+    font-weight: 400 !important;
+    font-size: 25px;
+    color: white;
+
+}
+.footer-area .list-group .list-group-item{
+    margin: -3px 0px;
+    color: white;
+    transition:0.5s !important
+}
+.footer-area .list-group .list-group-item:hover i{
+padding-right: 10px;
+}
+@media (max-width :767px) and (min-width:500px){
+    .footer-area .links{
+        margin-bottom: 13px;
+
+    }
+    .footer-area .row .column .heading{
+        font-size: 17px !important;
+    }
+    .portfolio_section .list-group{
+        margin-bottom: 13px;
+    }
+    .portfolio_section .list-group .list-group-item {
+        font-size: 13px;
+
+    }
+  
+}
+
+@media (max-width:500px){
+    #footer{
+        font-size: 15px !important ;
+    }
+    
+    .footer-area .row .column .heading{
+        
+        font-size: 15px;
+        color: white;
+    
+    }
+}
